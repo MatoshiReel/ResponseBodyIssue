@@ -33,21 +33,33 @@ public class RequestError extends RequestIssue {
             return self();
         }
 
+        /**
+         * @see ErrorMessageFactory
+         */
         public B message(ErrorReason reason) {
             this.message = ErrorMessageFactory.get(reason);
             return self();
         }
 
+        /**
+         * @see ErrorMessageFactory
+         */
         public B message(ErrorReason reason, String... params) {
             this.message = ErrorMessageFactory.get(reason, params);
             return self();
         }
 
+        /**
+         * @see ErrorMessageFactory
+         */
         public B message() {
             this.message = ErrorMessageFactory.get(this.errorReason);
             return self();
         }
 
+        /**
+         * @see ErrorMessageFactory
+         */
         public B message(String... params) {
             this.message = ErrorMessageFactory.get(this.errorReason, params);
             return self();

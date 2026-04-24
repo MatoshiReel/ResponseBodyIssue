@@ -16,6 +16,7 @@ public class ErrorMessageFactory {
      * {@code BAD_UUID} -> "Invalid UUID format.";<br>
      * {@code BAD_DATA_TYPE} -> "%s has invalid data type.";<br>
      * {@code NOT_SUIT} -> "%s doesn't suit. Suitable values: %s.";<br>
+     * {@code NOT_EQUAL} -> "%s is not equal to %s.";<br>
      * {@code NOT_EXIST} -> "%s doesn't exist.";<br>
      * {@code NOT_FOUND} -> "%s isn't found.";<br>
      * {@code SCOPE} -> "This %s has %s scope, which doesn't allow you.";<br>
@@ -36,6 +37,7 @@ public class ErrorMessageFactory {
             case BAD_UUID -> "Invalid UUID format.";
             case BAD_DATA_TYPE -> "%s has invalid data type.";
             case NOT_SUIT -> "%s doesn't suit. Suitable values: %s.";
+            case NOT_EQUAL -> "%s is not equal to %s.";
             case NOT_EXIST -> "%s doesn't exist.";
             case NOT_FOUND -> "%s isn't found.";
             case SCOPE -> "This %s has %s scope, which doesn't allow you.";
