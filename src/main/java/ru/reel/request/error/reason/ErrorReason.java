@@ -13,6 +13,7 @@ public enum ErrorReason {
     NOT_EQUAL,
     NOT_EXIST,
     NOT_FOUND,
+    NOT_MATCH,
     SCOPE,
     OWNER_ACCESS,
     NOT_ALLOW,

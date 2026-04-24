@@ -19,6 +19,7 @@ public class ErrorMessageFactory {
      * {@code NOT_EQUAL} -> "%s is not equal to %s.";<br>
      * {@code NOT_EXIST} -> "%s doesn't exist.";<br>
      * {@code NOT_FOUND} -> "%s isn't found.";<br>
+     * {@code NOT_MATCH} -> "%s is not match.";<br>
      * {@code SCOPE} -> "This %s has %s scope, which doesn't allow you.";<br>
      * {@code OWNER_ACCESS} -> "You don't have access for this request, because you are not the owner of this %s.";<br>
      * {@code LESS_SIZE} -> "%s can't have value less than %s.";<br>
@@ -40,6 +41,7 @@ public class ErrorMessageFactory {
             case NOT_EQUAL -> "%s is not equal to %s.";
             case NOT_EXIST -> "%s doesn't exist.";
             case NOT_FOUND -> "%s isn't found.";
+            case NOT_MATCH -> "%s is not match.";
             case SCOPE -> "This %s has %s scope, which doesn't allow you.";
             case OWNER_ACCESS -> "You don't have access for this request, because you are not the owner of this %s.";
             case LESS_SIZE -> "%s can't have value less than %s.";
