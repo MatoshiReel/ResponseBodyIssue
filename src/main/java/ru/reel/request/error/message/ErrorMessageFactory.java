@@ -18,6 +18,7 @@ public class ErrorMessageFactory {
      * {@code NOT_SUIT} -> "%s doesn't suit. Suitable values: %s.";<br>
      * {@code NOT_EQUAL} -> "%s is not equal to %s.";<br>
      * {@code NOT_EXIST} -> "%s doesn't exist.";<br>
+     * {@code EXIST} -> "%s already exist.";<br>
      * {@code NOT_FOUND} -> "%s isn't found.";<br>
      * {@code NOT_MATCH} -> "%s is not match.";<br>
      * {@code SCOPE} -> "This %s has %s scope, which doesn't allow you.";<br>
@@ -40,6 +41,7 @@ public class ErrorMessageFactory {
             case NOT_SUIT -> "%s doesn't suit. Suitable values: %s.";
             case NOT_EQUAL -> "%s is not equal to %s.";
             case NOT_EXIST -> "%s doesn't exist.";
+            case EXIST -> "%s already exist.";
             case NOT_FOUND -> "%s isn't found.";
             case NOT_MATCH -> "%s is not match.";
             case SCOPE -> "This %s has %s scope, which doesn't allow you.";
