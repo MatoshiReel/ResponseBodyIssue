@@ -25,7 +25,8 @@ public class ErrorMessageFactory {
      * {@code OWNER_ACCESS} -> "You don't have access for this request, because you are not the owner of this %s.";<br>
      * {@code LESS_SIZE} -> "%s can't have value less than %s.";<br>
      * {@code GREATER_SIZE} -> "%s can't have value greater than %s.";<br>
-     * {@code NOT_ALLOW} -> "%s is not allow for this user."<br>
+     * {@code NOT_ALLOW} -> "%s is not allow for this user.";<br>
+     * {@code ENCRYPTION} -> "Encrypted data is not valid."<br>
      * @param reason one of a {@link ErrorReason} enum value.
      * @return unformatted {@link String} message for {@link RequestError} or his child classes.
      * @see ErrorReason
@@ -49,6 +50,7 @@ public class ErrorMessageFactory {
             case LESS_SIZE -> "%s can't have value less than %s.";
             case GREATER_SIZE -> "%s can't have value greater than %s.";
             case NOT_ALLOW -> "%s is not allow for this user.";
+            case ENCRYPTION -> "Encrypted data is not valid.";
         };
     }
 

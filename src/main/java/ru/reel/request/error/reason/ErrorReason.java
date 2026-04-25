@@ -17,7 +17,8 @@ public enum ErrorReason {
     NOT_MATCH,
     SCOPE,
     OWNER_ACCESS,
-    NOT_ALLOW,
     LESS_SIZE,
-    GREATER_SIZE
+    GREATER_SIZE,
+    NOT_ALLOW,
+    ENCRYPTION
 }
