@@ -1,6 +1,8 @@
 package ru.reel.request.issue;
 
 
+import ru.reel.request.error.message.ErrorMessageFactory;
+
 public abstract class RequestIssue {
     protected String message;
 
@@ -14,6 +16,11 @@ public abstract class RequestIssue {
 
     public abstract static class RequestIssueBuilder<C, B extends RequestIssueBuilder<C, B>> {
         protected String message;
+
+        public B customMessage(String message) {
+            this.message = message;
+            return self();
+        }
 
         protected abstract B self();
         public abstract C build();
