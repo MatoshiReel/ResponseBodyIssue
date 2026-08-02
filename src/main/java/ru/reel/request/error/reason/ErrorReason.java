@@ -1,7 +1,7 @@
 package ru.reel.request.error.reason;
 
 /**
- * The {@code ErrorReason} is an enum, that points on one of the reason of error for 4xx response status.
+ * The {@code ErrorReason} enum represents a reason for a 4xx response status.
  */
 public enum ErrorReason {
     EMPTY,

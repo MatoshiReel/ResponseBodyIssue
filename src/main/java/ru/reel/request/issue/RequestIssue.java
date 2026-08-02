@@ -1,8 +1,10 @@
 package ru.reel.request.issue;
 
-
-import ru.reel.request.error.message.ErrorMessageFactory;
-
+/***
+ * The {@code RequestIssue} is an abstract base class
+ * that serves as a  template for subclasses
+ * representing different types of request issues.
+ */
 public abstract class RequestIssue {
     protected String message;
 

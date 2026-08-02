@@ -5,7 +5,7 @@ import ru.reel.request.error.reason.ErrorReason;
 import ru.reel.request.issue.RequestIssue;
 
 /**
- * The {@code RequestError} is a DTO class, that describes a reason of error for 4xx response status.
+ * The {@code RequestError} is a DTO class that describes the reason for an error for a 4xx response status.
  * @see ErrorReason
  * @see ErrorMessageFactory
  */
