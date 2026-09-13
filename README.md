@@ -110,6 +110,29 @@ The resulting JSON object:
 }
 ```
 
+4. Example of creating a `RequestFieldError` entity
+   with a custom message:
+```java
+import ru.reel.request.error.RequestFieldError;
+import ru.reel.request.error.reason.ErrorReason;
+
+RequestFieldError.builder()
+            .field("password")
+            .errorReason(ErrorReason.LESS_SIZE)
+            .customMessage("Password cannot be less than 6 characters!")
+            .build();
+```
+
+The resulting JSON object:
+
+```json
+{
+  "field" : "password",
+  "errorReason" : "LESS_SIZE",
+  "message" : "Password cannot be less than 6 characters!"
+}
+```
+
 To determine the number of parameters required for a standardized message,
 refer to the JavaDoc documentation for the `ErrorMessageFactory` class.
 

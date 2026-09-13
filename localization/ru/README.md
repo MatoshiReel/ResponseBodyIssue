@@ -108,7 +108,28 @@ RequestFieldError.builder()
 }
 ```
 
-Чтобы
+4. Пример создания сущности `RequestFieldError` с кастомным сообщением:
+```java
+import ru.reel.request.error.RequestFieldError;
+import ru.reel.request.error.reason.ErrorReason;
+
+RequestFieldError.builder()
+            .field("password")
+            .errorReason(ErrorReason.LESS_SIZE)
+            .customMessage("Password cannot be less than 6 characters!")
+            .build();
+```
+
+Результат в формате JSON:
+
+```json
+{
+  "field" : "password",
+  "errorReason" : "LESS_SIZE",
+  "message" : "Password cannot be less than 6 characters!"
+}
+```
+
 Чтобы определить количество параметров, 
 необходимых для стандартизированного сообщения, 
 обратитесь к документации JavaDoc класса ErrorMessageFactory.
