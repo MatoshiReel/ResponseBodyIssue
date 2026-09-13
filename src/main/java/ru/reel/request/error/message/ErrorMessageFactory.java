@@ -4,7 +4,7 @@ import ru.reel.request.error.reason.ErrorReason;
 import ru.reel.request.error.RequestError;
 
 /**
- * The {@code ErrorMessageFactory} is a factory class that provides standardized messages for     the {@code message} field of {@link RequestError}.<br>
+ * The {@code ErrorMessageFactory} is a factory class that provides standardized messages for the {@code message} field of {@link RequestError}.<br>
  * Check out the {@link #get(ErrorReason)} method to see all supported message formats.
  * @see RequestError
  */
